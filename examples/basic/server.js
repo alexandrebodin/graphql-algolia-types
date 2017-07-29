@@ -1,18 +1,5 @@
-<p align="center">
-    <h3 align="center">GraphQL Algolia API Types</h3>
-    <p align="center"><em>Integrate Algolia into your GraphQL API</em><p>
-</p>
+require('dotenv').config();
 
-![Basic example](screenshot.png)
-
-
-## Disclaimer
-
-This project is highly experimental, and not yet on npm. If you would like to try it out clone the rep and go to the examples folder to see how it works
-
-## Usage
-
-```javascript
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const algoliasearch = require('algoliasearch');
@@ -51,4 +38,3 @@ app.use(
 );
 
 app.listen(3000);
-```

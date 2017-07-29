@@ -1,0 +1,33 @@
+{
+  "name": "graphql-algolia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src examples --fix",
+    "dev": "nodemon examples/basic/server.js",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "algoliasearch": "^3.24.3"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.7",
+    "graphql": "^0.10.5",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.5.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
