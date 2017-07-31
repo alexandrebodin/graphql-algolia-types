@@ -17,7 +17,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const algoliasearch = require('algoliasearch');
 const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
-const { GraphQLAlogliaSearchType } = require('../../src');
+const { GraphQLAlgoliaSearchType } = require('../../src');
 
 const client = algoliasearch(
   process.env.ALGOLIA_APP_ID,
@@ -35,7 +35,7 @@ var schema = new GraphQLSchema({
           return 'world';
         },
       },
-      algoliaSearch: new GraphQLAlogliaSearchType({ index }),
+      algoliaSearch: new GraphQLAlgoliaSearchType({ index }),
     },
   }),
 });
