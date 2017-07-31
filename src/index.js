@@ -7,7 +7,7 @@ const {
   GraphQLInt,
 } = require('graphql');
 
-const GraphQLAlogliaSearchType = function GraphQLAlogliaType({ index }) {
+const GraphQLAlgoliaSearchType = function GraphQLAlgoliaSearchType({ index }) {
   const hitType = new GraphQLScalarType({
     name: 'HitType',
     serialize: a => a,
@@ -43,5 +43,5 @@ const GraphQLAlogliaSearchType = function GraphQLAlogliaType({ index }) {
 };
 
 module.exports = {
-  GraphQLAlogliaSearchType,
+  GraphQLAlgoliaSearchType,
 };
